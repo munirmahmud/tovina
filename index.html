@@ -1,0 +1,1012 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tovina - A Travel Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- favicon -->		
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    
+    <!-- Bootstrap CSS -->		
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->		
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<!-- Header Area Start -->
+<header class="header-area section">
+   
+    <!-- Header Top -->
+    <div class="header-top section">
+        <div class="container-fluid">
+            <div class="row">
+               
+                <!-- Header Top Left -->
+                <div class="header-top-left text-left col-sm-4">
+                    <p class="call-us">Call us  +880 1234 567890</p>
+                </div>
+                
+                <!-- Header Top Center (Hide it if user logged in ) -->
+                <div class="header-top-center text-center col-sm-4 hidden-xs">
+                    <ul class="login-register">
+                        <li><a href="login-register.html">Login / Register</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Header Top Right -->
+                <div class="header-top-right text-right col-sm-4">
+                    <a href="profile.html" class="user-logged-in"><i class="fa fa-user"></i><span>Welcome user</span></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header Bottom -->
+    <div class="header-bottom text-center section">
+        <div class="container-fluid">
+            <div class="row">
+                      
+                <!-- Header Logo -->
+                <div class="text-left col-md-2 col-sm-6">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <!-- Header Buttons -->
+                <div class="text-right col-md-2 col-sm-6 float-right hidden-xs">
+                    <div class="header-links">
+                        <a href="#"><i class="fa fa-paper-plane-o"></i><span>Submit Place</span></a>
+                    </div>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="text-center col-md-8 col-xs-12">
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="wall.html">wall</a></li>
+                            <li><a href="offers.html">offers</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="blog.html">blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li><a href="blog-details.html">blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="wall.html">wall</a></li>
+                                    <li><a href="wall-with-map.html">wall with map</a></li>
+                                    <li><a href="photo.html">photo</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="offers.html">offers</a></li>
+                                    <li><a href="message.html">message</a></li>
+                                    <li><a href="product.html">product</a></li>
+                                    <li><a href="ratting.html">ratting</a></li>
+                                    <li><a href="login-register.html">login register</a></li>
+                                    <li><a href="user-account.html">user account</a></li>
+                                    <li><a href="property.html">Property</a></li>
+                                    <li><a href="profile.html">profile</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu"></div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    
+</header>
+<!-- End of Header Area -->
+
+<!-- Hero Map Area Start -->
+<div class="home-map-area section">
+    <div id="map-home"></div>
+</div>
+<!-- End of Hero Map Area -->
+
+<!-- Search Area Start -->
+<div class="search-area section pt-60 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Search Wrapper -->
+                <div class="search-wrapper fix">
+                    <form action="#" id="search-form">
+                        <div class="input-box keyword">
+                            <input type="text" placeholder="Keywords">
+                        </div>
+                        <div class="input-box location">
+                            <select>
+                                <option value="1">Location</option>
+                                <option value="2">Location 1</option>
+                                <option value="3">Location 2</option>
+                                <option value="4">Location 3</option>
+                                <option value="5">Location 4</option>
+                                <option value="6">Location 5</option>
+                            </select>
+                        </div>
+                        <div class="input-box category">
+                            <select>
+                                <option value="1">Category</option>
+                                <option value="2">Category 1</option>
+                                <option value="3">Category 2</option>
+                                <option value="4">Category 3</option>
+                                <option value="5">Category 4</option>
+                                <option value="6">Category 5</option>
+                            </select>
+                        </div>
+                        <div class="input-box radius">
+                            <p>Radius</p>
+				            <input type="range" value="70" min="0" max="180" />
+                        </div>
+                        <div class="input-box submit">
+				            <input type="submit" value="search" />
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Search Area -->
+
+<!-- Category Browser Area Start -->
+<div class="category-browse-area section pb-80">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+           <div class="section-title text-center col-xs-12 mb-50">
+               <h2>Browse Location</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+           </div>
+        </div>
+        <div class="row">
+            <!-- Category Browse Slider -->
+            <div class="category-browse-slider">
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-madical">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/madical.png" alt="">
+                            <h4>Medical & Health</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(50+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Medical & Health</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-place">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/place.png" alt="">
+                            <h4>Place</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(100+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Place</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-shopping">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/shopping.png" alt="">
+                            <h4>Shopping</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(70+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Shopping</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-real-estate">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/real-estate.png" alt="">
+                            <h4>Real Estate</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(30+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Real Estate</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-movie">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/movie.png" alt="">
+                            <h4>Entertainment</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(40+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Entertainment</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-holiday">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/holiday.png" alt="">
+                            <h4>Vacations / Holidays</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(60+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Vacations / Holidays</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-park">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/park.png" alt="">
+                            <h4>Parks & Playground</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(20+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Parks & Playground</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-restaurant">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/restaurant.png" alt="">
+                            <h4>Resturents & Foods</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(90+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Resturents & Foods</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-madical">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/madical.png" alt="">
+                            <h4>Medical & Health</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(50+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Medical & Health</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-place">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/place.png" alt="">
+                            <h4>Place</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(100+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Place</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-shopping">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/shopping.png" alt="">
+                            <h4>Shopping</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(70+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Shopping</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Cat Slide Item -->
+                <div class="col-xs-12">
+                    
+                    <div class="cat-slide-item cat-real-estate">
+                       
+                        <div class="parent-cat text-center">
+                            <img src="img/category/real-estate.png" alt="">
+                            <h4>Real Estate</h4>
+                        </div>
+                        
+                        <div class="total-cat-info text-center">
+                            <p>(30+)  information</p>
+                        </div>
+                        
+                        <div class="cat-list">
+                            <h4>Real Estate</h4>
+                            <ul>
+                                <li><a href="#"><span>Theaters</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Bars</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Clubs</span><span>(10)</span></a></li>
+                                <li><a href="#"><span>Golf Fild</span><span>(10)</span></a></li>
+                            </ul>
+                            <a href="#" class="view-all-cat">View all <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Category Browser Area -->
+
+<!-- Popular Location Area Start -->
+<div class="popular-location-area section pb-80">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+           <div class="section-title text-center col-xs-12 mb-50">
+               <h2>Popular Locations</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Popular Location Slider -->
+                <div class="popular-location-slider">
+                    <!-- Location Slide Item -->
+                    <div class="col-xs-12">
+                        <div class="location-slide-item">
+                            <div class="location-image">
+                                <img src="img/popular-location/1.jpg" alt="">
+                                <a href="#" class="link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="content fix">
+                                <h4 class="title float-left"><a href="#">New York City</a></h4>
+                                <span class="total-location float-right">20 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Location Slide Item -->
+                    <div class="col-xs-12">
+                        <div class="location-slide-item">
+                            <div class="location-image">
+                                <img src="img/popular-location/2.jpg" alt="">
+                                <a href="#" class="link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="content fix">
+                                <h4 class="title float-left"><a href="#">Australia</a></h4>
+                                <span class="total-location float-right">20 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Location Slide Item -->
+                    <div class="col-xs-12">
+                        <div class="location-slide-item">
+                            <div class="location-image">
+                                <img src="img/popular-location/3.jpg" alt="">
+                                <a href="#" class="link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="content fix">
+                                <h4 class="title float-left"><a href="#">China</a></h4>
+                                <span class="total-location float-right">20 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Location Slide Item -->
+                    <div class="col-xs-12">
+                        <div class="location-slide-item">
+                            <div class="location-image">
+                                <img src="img/popular-location/4.jpg" alt="">
+                                <a href="#" class="link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="content fix">
+                                <h4 class="title float-left"><a href="#">Switzerland</a></h4>
+                                <span class="total-location float-right">20 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Location Slide Item -->
+                    <div class="col-xs-12">
+                        <div class="location-slide-item">
+                            <div class="location-image">
+                                <img src="img/popular-location/5.jpg" alt="">
+                                <a href="#" class="link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="content fix">
+                                <h4 class="title float-left"><a href="#">London</a></h4>
+                                <span class="total-location float-right">20 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Popular Location Area -->
+
+<!-- How it work Area Start -->
+<div class="howitwork-area section pb-90">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+           <div class="section-title text-center col-xs-12 mb-40">
+               <h2>How it works</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+           </div>
+        </div>
+        <div class="row row-30">
+            <!-- Single Progress -->
+            <div class="single-progress col-md-4 col-sm-7 col-xs-12 mb-30">
+                <div class="head fix">
+                    <i class="fa fa-building-o"></i>
+                    <h4>Create Your Business</h4>
+                </div>
+                <div class="content">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <!-- Single Progress -->
+            <div class="single-progress col-md-4 col-sm-7 col-xs-12 mb-30">
+                <div class="head fix">
+                    <i class="fa fa-microphone"></i>
+                    <h4>Create Statuses & Posts</h4>
+                </div>
+                <div class="content">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <!-- Single Progress -->
+            <div class="single-progress col-md-4 col-sm-7 col-xs-12 mb-30">
+                <div class="head fix">
+                    <i class="fa fa-opencart"></i>
+                    <h4>Sell Products for Commission</h4>
+                </div>
+                <div class="content">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of How it work Area -->
+
+<!-- Call To Action Area Start -->
+<div class="cta-area section pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <!-- CTA Wrapper -->
+            <div class="cta-wrapper text-center col-xs-12">
+                <h1>Set Your Business Location</h1>
+                <h4>Sart your own business & explore</h4>
+                <a href="#">Set your Location</a>
+                <a href="#" class="border">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Call To Action Area -->
+
+<!-- Featured Places Area Start -->
+<div class="featured-place-area section pt-90 pb-60">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+           <div class="section-title text-center col-xs-12 mb-60">
+               <h2>Featured Places</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+           </div>
+        </div>
+        <!-- Masonary Grid -->
+        <div class="row masonry-grid">
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+                 <div class="single-place">
+                     <div class="image"><img src="img/featured-places/1.jpg" alt=""></div>
+                     <div class="content fix">
+                         <p class="location"><i class="fa fa-map-marker"></i><span>Switzerland</span></p>
+                         <p class="rating">
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                         </p>
+                     </div>
+                     <a href="#" class="link"><i class="fa fa-link"></i></a>
+                 </div>
+            </div>
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+             <div class="single-place">
+                 <div class="image"><img src="img/featured-places/2.jpg" alt=""></div>
+                 <div class="content fix">
+                     <p class="location"><i class="fa fa-map-marker"></i><span>Australia</span></p>
+                     <p class="rating">
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                     </p>
+                 </div>
+                 <a href="#" class="link"><i class="fa fa-link"></i></a>
+             </div>
+            </div>
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+             <div class="single-place">
+                 <div class="image"><img src="img/featured-places/3.jpg" alt=""></div>
+                 <div class="content fix">
+                     <p class="location"><i class="fa fa-map-marker"></i><span>Africa</span></p>
+                     <p class="rating">
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                     </p>
+                 </div>
+                 <a href="#" class="link"><i class="fa fa-link"></i></a>
+             </div>
+            </div>
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+             <div class="single-place">
+                 <div class="image"><img src="img/featured-places/4.jpg" alt=""></div>
+                 <div class="content fix">
+                     <p class="location"><i class="fa fa-map-marker"></i><span>USA</span></p>
+                     <p class="rating">
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                         <i class="fa fa-star-o"></i>
+                     </p>
+                 </div>
+                 <a href="#" class="link"><i class="fa fa-link"></i></a>
+             </div>
+            </div>
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-6 col-md-8 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+                <div class="single-place">
+                    <div class="image"><img src="img/featured-places/5.jpg" alt=""></div>
+                    <div class="content fix">
+                         <p class="location"><i class="fa fa-map-marker"></i><span>Bangladesh</span></p>
+                         <p class="rating">
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                             <i class="fa fa-star-o"></i>
+                         </p>
+                    </div>
+                    <a href="#" class="link"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <!-- Masonary Item -->
+            <div class="masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                <!-- Single Place -->
+                <div class="single-place">
+                    <div class="image"><img src="img/featured-places/6.jpg" alt=""></div>
+                        <div class="content fix">
+                            <p class="location"><i class="fa fa-map-marker"></i><span>India</span></p>
+                            <p class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </p>
+                        </div>
+                    <a href="#" class="link"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+                
+        </div>
+        
+    </div>
+</div>
+<!-- End of Featured Places Area -->
+
+<!-- Blog Area Start -->
+<div class="blog-area section pb-60">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+           <div class="section-title text-center col-xs-12 mb-60">
+               <h2>Blog Posts</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+           </div>
+        </div>
+        <div class="row">
+            <!-- Blog Item -->
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
+                <div class="blog-item">
+                    <a href="blog-details.html" class="image"><img src="img/blog/1.jpg" alt=""></a>
+                    <div class="content">
+                        <div class="tags fix">
+                            <a href="#">New Direction,</a>
+                            <a href="#">USA</a>
+                        </div>
+                        <h4 class="title"><a href="blog-details.html">We Are Helping to find location</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <a href="blog-details.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Item -->
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
+                <div class="blog-item">
+                    <a href="blog-details.html" class="image"><img src="img/blog/2.jpg" alt=""></a>
+                    <div class="content">
+                        <div class="tags fix">
+                            <a href="#">New Direction,</a>
+                            <a href="#">USA</a>
+                        </div>
+                        <h4 class="title"><a href="blog-details.html">We Are Helping to find location</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <a href="blog-details.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Item -->
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
+                <div class="blog-item">
+                    <a href="blog-details.html" class="image"><img src="img/blog/3.jpg" alt=""></a>
+                    <div class="content">
+                        <div class="tags fix">
+                            <a href="#">New Direction,</a>
+                            <a href="#">USA</a>
+                        </div>
+                        <h4 class="title"><a href="blog-details.html">We Are Helping to find location</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <a href="blog-details.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Blog Area -->
+
+<!-- Subscribe Area Start -->
+<div class="subscribe-area section">
+    <div class="container">
+        <div class="row">
+            <div class="subscribe-wrapper col-xs-12 pt-50 pb-50">
+                <h3>Enter Your E-mail Address For next Update</h3>
+                <!-- Subscribe Form -->
+                <div class="subscribe-form">
+                    <form action="#">
+                        <input type="email" placeholder="Your mail address" >
+                        <button><i class="fa fa-paper-plane-o"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Subscribe Area -->
+
+<!-- Footer Area Start -->
+<footer class="footer-area section">
+    <!-- Footer Top -->
+    <div class="footer-top section pt-60 pb-10">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <div class="footer-about">
+                        <img src="img/logo.png" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <h3 class="title">Popular Posts</h3>
+                    <div class="footer-post">
+                        <div class="sin-post fix">
+                            <a href="#" class="image"><img src="img/footer-blog/1.jpg" alt=""></a>
+                            <div class="content fix">
+                                <a href="#">Best Hotel in USA</a>
+                                <span>By: <a href="#">John Doe</a></span>
+                                <span>13 feb 2016</span>
+                            </div>
+                        </div>
+                        <div class="sin-post fix">
+                            <a href="#" class="image"><img src="img/footer-blog/2.jpg" alt=""></a>
+                            <div class="content fix">
+                                <a href="#">All foods are awesome</a>
+                                <span>By: <a href="#">John Doe</a></span>
+                                <span>13 feb 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <h3 class="title">Contact info</h3>
+                    <div class="footer-contact-info">
+                        <div class="address">
+                            <h5>Address :</h5>
+                            <p>77 seventh evenue, wrong road USA Beside Lorem. -22566.</p>
+                        </div>
+                        <div class="phone">
+                            <h5>Phone :</h5>
+                            <p>+110  22233 3333</p>
+                            <p>+110  22233 3333</p>
+                        </div>
+                        <div class="email">
+                            <h5>E-mail :</h5>
+                            <p>company@mail.com</p>
+                            <p>support@mail.info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom section">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-xs-12">
+                    <p>Tovina, &copy; All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<!-- End of Footer Area -->
+
+
+<!-- jquery -->		
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+<!-- bootstrap JS -->		
+<script src="js/bootstrap.min.js"></script>
+
+<!-- plugins JS -->		
+<script src="js/plugins.js"></script>
+
+<!-- Ajax Mail JS -->
+<script src="js/ajax-mail.js"></script>
+
+<!-- Google Map APi -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x66W_L99EvyG7NQRhbJf6UaVAdzA38E"></script>
+<!-- Home Map Activation -->
+<script src="js/map/map-home.js"></script>
+
+<!-- Range Slider Active
+============================================ -->
+<script type="text/javascript">
+    
+    var rangeSlider = document.querySelectorAll('input[type="range"]');
+    
+    rangesliderJs.create(rangeSlider,{});
+    
+        $('.range_handle').append('<span></span>');
+    
+    $('input[type="range"]').on('input', function() {
+        var radiusLength = $('.range_handle span');
+        radiusLength.html( $(this).val() +'k' );
+    });
+    
+    var locRadius = $('input[type="range"]').attr('value');
+        var radiusLength = $('.range_handle span');
+        radiusLength.html( locRadius +'k' );
+    
+</script>
+<!-- Main JS
+============================================ -->		
+<script src="js/main.js"></script>
+</body>
+</html>

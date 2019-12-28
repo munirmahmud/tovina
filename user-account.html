@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>User Account - Tovina</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- favicon -->		
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    
+    <!-- Bootstrap CSS -->		
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->		
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<!-- Header Area Start -->
+<header class="header-area section">
+   
+    <!-- Header Top -->
+    <div class="header-top section">
+        <div class="container-fluid">
+            <div class="row">
+               
+                <!-- Header Top Left -->
+                <div class="header-top-left text-left col-sm-4">
+                    <p class="call-us">Call us  +880 1234 567890</p>
+                </div>
+                
+                <!-- Header Top Center (Hide it if user logged in ) -->
+                <div class="header-top-center text-center col-sm-4 hidden-xs">
+                    <ul class="login-register">
+                        <li><a href="login-register.html">Login / Register</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Header Top Right -->
+                <div class="header-top-right text-right col-sm-4">
+                    <a href="profile.html" class="user-logged-in"><i class="fa fa-user"></i><span>Welcome user</span></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header Bottom -->
+    <div class="header-bottom text-center section">
+        <div class="container-fluid">
+            <div class="row">
+                      
+                <!-- Header Logo -->
+                <div class="text-left col-md-2 col-sm-6">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <!-- Header Buttons -->
+                <div class="text-right col-md-2 col-sm-6 float-right hidden-xs">
+                    <div class="header-links">
+                        <a href="#"><i class="fa fa-paper-plane-o"></i><span>Submit Place</span></a>
+                    </div>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="text-center col-md-8 col-xs-12">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="wall.html">wall</a></li>
+                            <li><a href="offers.html">offers</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="blog.html">blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li><a href="blog-details.html">blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="wall.html">wall</a></li>
+                                    <li><a href="wall-with-map.html">wall with map</a></li>
+                                    <li><a href="photo.html">photo</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="offers.html">offers</a></li>
+                                    <li><a href="message.html">message</a></li>
+                                    <li><a href="product.html">product</a></li>
+                                    <li><a href="ratting.html">ratting</a></li>
+                                    <li><a href="login-register.html">login register</a></li>
+                                    <li class="active"><a href="user-account.html">user account</a></li>
+                                    <li><a href="property.html">Property</a></li>
+                                    <li><a href="profile.html">profile</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu"></div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    
+</header>
+<!-- End of Header Area -->
+
+<!-- Page Banner Area Start -->
+<div class="page-banner-area section">
+    <div class="container">
+        <div class="row">
+            <div class="page-banner col-xs-12">
+                <h3>User Account</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Page Banner Area -->
+
+<!-- Page Area Start -->
+<div class="page-area section pt-90 pb-90">
+    <div class="container">
+        
+        <div class="row">
+            
+            
+                
+            <div class="col-xs-12">
+                
+                <!-- Wall Tab List -->
+                <div class="wall-tab-list mb-50">
+                    <ul>
+                        <li class="active"><a href="#my-business" data-toggle="tab"><i class="fa fa-info-circle"></i><span>my Property</span></a></li>
+                        <li><a href="#about" data-toggle="tab"><i class="fa fa-question-circle-o"></i><span>about</span></a></li>
+                        <li><a href="#offers" data-toggle="tab"><i class="fa fa-gift"></i><span>offers</span></a></li>
+                        <li><a href="#message" data-toggle="tab"><i class="fa fa-envelope-o"></i><span>message</span></a></li>
+                        <li><a href="#products" data-toggle="tab"><i class="fa fa-cubes"></i><span>products</span></a></li>
+                        <li><a href="#ratings" data-toggle="tab"><i class="fa fa-star-half-o"></i><span>ratings</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Tab panes -->
+                <div class="wall-tab-content tab-content section">
+                    <!-- Wall Tab Pane -->
+                    <div class="tab-pane active" id="my-business">
+                       
+                        <div class="business-wrapper">
+                            <a href="#">view Property </a>
+                            <a href="#">edit Property </a>
+                            <a href="#">delect Property </a>
+                            <div class="info">
+                                <p>You do not have a Business yet</p>
+                            </div>
+                            <a href="#">Create Property </a>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane" id="about">
+                        
+                        <!-- Wall About Wrapper -->
+                        <div class="wall-about-wrapper">
+                            <h3>You will Love Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam vestibulum aliquet. Suspendisse convallis faucibus lorem eu euismod. Praesent condimentum aliquam efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean laoreet enim a rhoncus posuere. Nulla eget dapibus lacus. Donec sagittis risus nec arcu porttitor rhoncus. Nunc auctor sodales risus, eleifend condimentum magna egestas et. Suspendisse vitae auctor nunc. Quisque eleifend risus nec purus sollicitudin, eu dictum tellus finibus. Quisque convallis odio ligula, et suscipit tortor venenatis sit amet. Duis condimentum, nibh mattis facilisis ultrices, sem quam vestibulum elit, a aliquet dolor purus vel lectus. Pellentesque iaculis varius pellentesque.</p>
+                            <p>Nullam est risus, consequat id turpis eget, aliquam posuere neque. Nullam molestie, nulla non efficitur bibendum, odio odio commodo justo, eget elementum sem ex vitae nunc. Donec aliquam commodo arcu, euismod ullamcorper eros ornare at. Morbi pretium turpis non magna hendrerit finibus. Pellentesque et tellus non nisi commodo dignissim non nec arcu. Pellentesque quis quam pellentesque, ornare massa non, tempus justo. Aenean vulputate, nunc eu mollis aliquam, sapien nisi sollicitudin elit, non volutpat erat diam et lacus. In blandit semper orci vitae commodo.</p>
+                            <p>Pellentesque posuere mauris ut nunc pharetra fringilla. Phasellus ut mauris ut ante ornare tempor eget sed diam. Phasellus gravida id nisl id tempor. Aenean id mauris mollis, pharetra libero id, condimentum massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tempor sollicitudin nibh id dapibus. Donec in interdum ligula. Vestibulum aliquet lorem in odio porta, vitae commodo diam ullamcorper. Duis purus urna, hendrerit sed ornare quis, venenatis eu urna. Proin a viverra augue. Curabitur sit amet erat varius, efficitur dolor rutrum, euismod neque.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane" id="offers">
+                       
+                        <!-- Wall Offer Wrapper -->
+                        <div class="wall-offer-wrapper">
+                            
+                            <h3>Discount Title</h3>
+                            
+                            <!-- Offer Banner With Text -->
+                            <div class="offer-banner-text mb-30">
+                                <h2>40% Discount For you</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            
+                            <!-- Offer Banner -->
+                            <a href="#" class="offer-banner mb-20">
+                                <img src="img/banner/3.jpg" alt="">
+                                <span>40%</span>
+                            </a>
+                            
+                            <h5>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</h5>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores quas molestias excepturi occaecati cupiditate non provident, similique sunt in culpa officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores quas molestias excepturi occaecati cupiditate non provident, similique sunt in culpa officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                            
+                            <blockquote>
+                                <p>“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.”</p>
+                            </blockquote>
+                            
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores quas molestias excepturi occaecati cupiditate non provident, similique sunt in culpa officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane" id="message">
+                       
+                        <!-- Wall Message Wrapper -->
+                        <div class="wall-message-wrapper">
+                            <h3>Send us a Message</h3>
+                            <div class="row">
+                                <form action="#" id="wall-message-form">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <input type="text" placeholder="Name">
+                                        <input type="email" placeholder="Email">
+                                        <input type="text" placeholder="Phone">
+                                    </div>
+                                    
+                                    <div class="col-sm-6 col-xs-12">
+                                        <textarea placeholder="Message"></textarea>
+                                        <input type="submit" value="send message">
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane" id="products">
+                       
+                        <!-- Wall Product Wrapper -->
+                        <div class="wall-product-wrapper">
+                            <h3>Our Products</h3>
+                            
+                            <div class="row">
+                                
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/1.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Powders for Sale</a></h4>
+                                        <span class="price-amount">$21.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/2.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Foundations for Sale</a></h4>
+                                        <span class="price-amount">$23.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/3.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Suspensions for Sale</a></h4>
+                                        <span class="price-amount">$25.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/4.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Lotions for Sale</a></h4>
+                                        <span class="price-amount">$35.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/5.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Eyeglasses Sale</a></h4>
+                                        <span class="price-amount">$35.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/6.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Football for Sale</a></h4>
+                                        <span class="price-amount">$49.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/1.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Powders for Sale</a></h4>
+                                        <span class="price-amount">$21.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/2.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Foundations for Sale</a></h4>
+                                        <span class="price-amount">$23.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                               
+                                <!-- Product Item -->
+                                <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 mb-30">
+                                    <div class="product-item">
+                                        <a href="#" class="image"><img src="img/product/3.jpg" alt=""></a>
+                                        <h4 class="title"><a href="#">Suspensions for Sale</a></h4>
+                                        <span class="price-amount">$25.00</span>
+                                        <a href="#" class="add-to-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Pagination -->
+                                <div class="col-xs-12">
+                                    <ul class="pagination">
+                                        <li><a href="#">←</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">→</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane" id="ratings">
+                        
+                        <!-- Wall Rating Wrapper -->
+                        <div class="wall-rating-wrapper">
+                            <h3>Customer Feedback</h3>
+                            
+                            <!-- Single Rating +-->
+                            <div class="sin-busi-rate">
+                                <!-- Rating Head -->
+                                <div class="head fix">
+                                    <!-- Rating Data -->
+                                    <div class="rating-data">
+                                        <div class="the-stars float-left">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="the-rate-cat float-left">for <b>Customer Service</b></span>
+                                    </div>
+                                    <!-- Rating Author Date -->
+                                    <div class="rating-auth-date float-right">
+                                        <span class="rating-auth">by <span>tombara</span></span>
+                                        <span class="rating-date">1 month ago</span>
+                                    </div>
+                                </div>
+                                <!-- Rating Content -->
+                                <div class="content">
+                                    <p>We had lunch here a few times while on the island visiting family and friends. The servers here are just wonderful and have great memories it seems. We sat on the ocean front patio and enjoyed the view with our delicious wine and lunch. Must try!</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Single Rating +-->
+                            <div class="sin-busi-rate">
+                                <!-- Rating Head -->
+                                <div class="head fix">
+                                    <!-- Rating Data -->
+                                    <div class="rating-data">
+                                        <div class="the-stars float-left">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="the-rate-cat float-left">for <b>Design Quality</b></span>
+                                    </div>
+                                    <!-- Rating Author Date -->
+                                    <div class="rating-auth-date float-right">
+                                        <span class="rating-auth">by <span>gardeno</span></span>
+                                        <span class="rating-date">1 month ago</span>
+                                    </div>
+                                </div>
+                                <!-- Rating Content -->
+                                <div class="content">
+                                    <p>We had lunch here a few times while on the island visiting family and friends. The servers here are just wonderful and have great memories it seems. We sat on the ocean front patio and enjoyed the view with our delicious wine and lunch. Must try!</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Single Rating +-->
+                            <div class="sin-busi-rate">
+                                <!-- Rating Head -->
+                                <div class="head fix">
+                                    <!-- Rating Data -->
+                                    <div class="rating-data">
+                                        <div class="the-stars float-left">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="the-rate-cat float-left">for <b>Customizability</b></span>
+                                    </div>
+                                    <!-- Rating Author Date -->
+                                    <div class="rating-auth-date float-right">
+                                        <span class="rating-auth">by <span>yeasin</span></span>
+                                        <span class="rating-date">1 month ago</span>
+                                    </div>
+                                </div>
+                                <!-- Rating Content -->
+                                <div class="content">
+                                    <p>We had lunch here a few times while on the island visiting family and friends. The servers here are just wonderful and have great memories it seems. We sat on the ocean front patio and enjoyed the view with our delicious wine and lunch. Must try!</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+                
+        </div>
+        
+    </div>
+</div>
+<!-- End of Page Area -->
+
+<!-- Subscribe Area Start -->
+<div class="subscribe-area section">
+    <div class="container">
+        <div class="row">
+            <div class="subscribe-wrapper col-xs-12 pt-50 pb-50">
+                <h3>Enter Your E-mail Address For next Update</h3>
+                <!-- Subscribe Form -->
+                <div class="subscribe-form">
+                    <form action="#">
+                        <input type="email" placeholder="Your mail address" >
+                        <button><i class="fa fa-paper-plane-o"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Subscribe Area -->
+
+<!-- Footer Area Start -->
+<footer class="footer-area section">
+    <!-- Footer Top -->
+    <div class="footer-top section pt-60 pb-10">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <div class="footer-about">
+                        <img src="img/logo.png" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <h3 class="title">Popular Posts</h3>
+                    <div class="footer-post">
+                        <div class="sin-post fix">
+                            <a href="#" class="image"><img src="img/footer-blog/1.jpg" alt=""></a>
+                            <div class="content fix">
+                                <a href="#">Best Hotel in USA</a>
+                                <span>By: <a href="#">John Doe</a></span>
+                                <span>13 feb 2016</span>
+                            </div>
+                        </div>
+                        <div class="sin-post fix">
+                            <a href="#" class="image"><img src="img/footer-blog/2.jpg" alt=""></a>
+                            <div class="content fix">
+                                <a href="#">All foods are awesome</a>
+                                <span>By: <a href="#">John Doe</a></span>
+                                <span>13 feb 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget -->
+                <div class="footer-widget col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 mb-50">
+                    <h3 class="title">Contact info</h3>
+                    <div class="footer-contact-info">
+                        <div class="address">
+                            <h5>Address :</h5>
+                            <p>77 seventh evenue, wrong road USA Beside Lorem. -22566.</p>
+                        </div>
+                        <div class="phone">
+                            <h5>Phone :</h5>
+                            <p>+110  22233 3333</p>
+                            <p>+110  22233 3333</p>
+                        </div>
+                        <div class="email">
+                            <h5>E-mail :</h5>
+                            <p>company@mail.com</p>
+                            <p>support@mail.info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom section">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-xs-12">
+                    <p>Tovina, &copy; All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<!-- End of Footer Area -->
+
+
+<!-- jquery -->		
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+<!-- bootstrap JS -->		
+<script src="js/bootstrap.min.js"></script>
+
+<!-- plugins JS -->		
+<script src="js/plugins.js"></script>
+
+<!-- Ajax Mail JS -->
+<script src="js/ajax-mail.js"></script>
+
+<!-- Main JS -->		
+<script src="js/main.js"></script>
+</body>
+</html>
